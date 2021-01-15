@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Redmine Zenedit trimmer",
+  "version": "1.0.0",
+  "description": "Удаляет всплывающие окна при наборе символа '#' во время редактированя описаний задач в Redmine",
+  "author": "Alexander Shkirkov",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://redmine.org/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
+
+
